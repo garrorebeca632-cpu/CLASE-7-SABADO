@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <form id="formulario">
+
+        <div>
+            <label for="nm">Nombre:</label>
+            <input type="text" id="nm" name="nm" placeholder="Escribe tu nombre">
+        </div>
+
+           <div>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Escribe tu correo">
+        </div>
+
+        <div>
+            <label for="psw">Contraseña:</label>
+            <input type="password" id="psw" name="psw" placeholder="Escribe tu contraseña">
+        </div>
+
+          <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono" placeholder="8888-8888">
+        </div>
+
+         <div>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" max="2025-12-12" min="2025-11-21">
+        </div>
+
+        
+         <div>
+            <label for="opciones">Opciones:</label>
+            <div class="option">
+                <label for="opcion1">Opcion 1:</label>
+            <input type="radio" id="opcion1" name="opciones" value="opcion1">
+        </div>
+
+            <div class="option">
+                <label for="opcion2">Opcion 2:</label>
+            <input type="radio" id="opcion2" name="opciones" value="opcion2">
+        </div>
+
+        <div>
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="sv">El Salvador</option>
+                <option value="gt">Guatemala</option>
+                <option value="hn">Honduras</option>
+                <option value="ni">Nicaragua</option>
+                <option value="cr">Costa Rica</option>
+                <option value="pa">Panamá</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="archivo">Archivo:</label>
+            <input type="file" id="archivo" name="archivo">
+        </div>
+
+        <div>
+          <label for="sabor">Opcion multiple:</label>
+          <div class="option">
+                <label for="sabor">Fresa</label>
+                <input type="checkbox" id="fresa" name="sabor" value="fresa"></input>
+          </div>
+          <div class="option">
+                <label for="sabor">Chocolate</label>
+                <input type="checkbox" id="chocolate" name="sabor" value="chocolate"></input>
+          </div>
+          <div class="option">
+                <label for="sabor">Pistacho</label>
+                <input type="checkbox" id="pistacho" name="sabor" value="pistacho"></input>
+          </div>
+          
+        </div>
+
+        <div>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" placeholder="Escribe tu comentario"></textarea>
+        </div>
+
+        <div class="sendBtn">
+            <button class="btn"type="submit">Enviar</button>
+            <button class="btn" id="alerta">Alerta</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
